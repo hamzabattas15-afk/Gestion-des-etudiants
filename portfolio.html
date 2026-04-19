@@ -96,7 +96,7 @@
       </div>
       <button type="button" id="addBtn">Ajouter</button>
       <button type="button" id="clearBtn">Vider</button>
-      <div class="info-box">Tu peux ajouter jusqu'à 3 étudiants, comme dans ton programme C.</div>
+      <div class="info-box">Tu peux ajouter jusqu'à 100 étudiants.</div>
       <p class="small">Appuie sur Entrée pour passer au champ suivant. Sur le dernier champ, Entrée ajoute l'étudiant.</p>
     </div>
 
@@ -159,10 +159,10 @@
         return;
       }
 
-      if (etudiants.length >= 3) {
-        alert('Tu as déjà ajouté 3 étudiants.');
-        return;
-      }
+      if (etudiants.length >= 100) {
+    alert('Tu as déjà ajouté 100 étudiants.');
+    return;
+}
 
       const moyenne = (note1 + note2 + note3) / 3;
       const mention = calculMention(moyenne);
